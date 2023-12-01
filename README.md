@@ -46,6 +46,9 @@ El juego finaliza cuando las vidas del jugador o la vida de la Super nave llegan
 
 &nbsp;
 ### **Imagenes**
+![Imagen_muestra](https://github.com/marianoLaclau/proyecto_pygame_stargalaxy/blob/main/img_muestra/zstart.jpg)
+![Imagen_muestra](https://github.com/marianoLaclau/proyecto_pygame_stargalaxy/blob/main/img_muestra/img_muestra.jpg)
+![Imagen_muestra](https://github.com/marianoLaclau/proyecto_pygame_stargalaxy/blob/main/img_muestra/img_muestra2.jpg)
 
 
 &nbsp;
