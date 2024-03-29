@@ -27,16 +27,16 @@ temporizador_game_over = None #Servira para retrasar la aparicion de las pantall
 
 #Importamos imagenes------------------------------------------------------------------------------------------------------------------------------------------------
 #Backgraounds
-background_principal = pygame.image.load(".\PyGame\img\zackground_principal.jpg").convert()
+background_principal = pygame.image.load(".\proyecto_pygame_stargalaxy1.0\img\zackground_principal.jpg").convert()
 background_principal = pygame.transform.scale(background_principal, (1000, 600))#Redimensionar imagen
 
 #Nave Jugador
-player_1 = pygame.image.load(".\PyGame\img\znave_1_player.png").convert()
+player_1 = pygame.image.load(".\img\znave_1_player.png").convert()
 player_1 = pygame.transform.scale(player_1,(70,90))#Redimensionar imagen
 player_1.set_colorkey(BLACK) #Quita el contorno negro
 
 #Propulsores(varias imagenes para crear efecto)
-nombres_archivos = [".\PyGame\img\propulsores.png",".\PyGame\img\propulsores2.png",".\PyGame\img\propulsores3.png"]
+nombres_archivos = [".\img\propulsores.png",".\img\propulsores2.png",".\img\propulsores3.png"]
 imagenes = [pygame.image.load(nombre_archivo) for nombre_archivo in nombres_archivos]
 indice_imagen = 0
 #Redimensionamos y quitamos contorno negro individualmente 
@@ -51,64 +51,64 @@ imagenes[2].set_colorkey(BLACK)
 
 
 #Disparo laser nave espacial
-imagen_laser = pygame.image.load(".\PyGame\img\zlasernave.png").convert()
+imagen_laser = pygame.image.load(".\img\zlasernave.png").convert()
 imagen_laser = pygame.transform.scale(imagen_laser,(10,20))#Redimensionar imagen
 imagen_laser.set_colorkey(BLACK) #Quita el contorno negro
-explosion_laser =  pygame.image.load(".\PyGame\img\zexplosionlaser.png").convert()
+explosion_laser =  pygame.image.load(".\img\zexplosionlaser.png").convert()
 explosion_laser = pygame.transform.scale(explosion_laser,(50,50))#Redimensionar imagen
 explosion_laser.set_colorkey(BLACK)
 
 
 #Nave enemigo
-enemigo =  pygame.image.load(".\PyGame\img\zenemigo.png").convert()
+enemigo =  pygame.image.load(".\img\zenemigo.png").convert()
 enemigo = pygame.transform.scale(enemigo,(50,50))#Redimensionar imagen
 enemigo.set_colorkey(BLACK) #Quita el contorno negro
 
 #Nave enemigo 2
-enemigo2 =  pygame.image.load(".\PyGame\img\zenemigo2.png").convert()
+enemigo2 =  pygame.image.load(".\img\zenemigo2.png").convert()
 enemigo2 = pygame.transform.scale(enemigo2,(50,50))#Redimensionar imagen
 enemigo2.set_colorkey(BLACK) #Quita el contorno negro
 
 #Nave Superenemigo
-super_enemigo =  pygame.image.load(".\PyGame\img\zsuperenemigo.png").convert()
+super_enemigo =  pygame.image.load(".\img\zsuperenemigo.png").convert()
 super_enemigo = pygame.transform.scale(super_enemigo,(200,200))#Redimensionar imagen
 super_enemigo.set_colorkey(BLACK) #Quita el contorno negro
 
 #Misil Superenemigo
-super_misil =  pygame.image.load(".\PyGame\img\zlaserenemigo.png").convert()
+super_misil =  pygame.image.load(".\img\zlaserenemigo.png").convert()
 super_misil = pygame.transform.scale(super_misil,(20,40))#Redimensionar imagen
 super_misil.set_colorkey(BLACK) #Quita el contorno negro
-explosion_misil = pygame.image.load(".\PyGame\img\zexplosionmisil.png").convert()
+explosion_misil = pygame.image.load(".\img\zexplosionmisil.png").convert()
 explosion_misil = pygame.transform.scale(explosion_misil,(40,80))#Redimensionar imagen
 explosion_misil.set_colorkey(BLACK)
 
 
 #Superxplosion final
-super_explosion =  pygame.image.load(".\PyGame\img\zsuperexplosion.png").convert()
+super_explosion =  pygame.image.load(".\img\zsuperexplosion.png").convert()
 super_explosion = pygame.transform.scale(super_explosion,(100,100))#Redimensionar imagen
 super_explosion.set_colorkey(BLACK) #Quita el contorno negro
 
 #Pantalla start
-start_img =  pygame.image.load(".\PyGame\img\zstart.jpg").convert()
+start_img =  pygame.image.load(".\img\zstart.jpg").convert()
 start_img = pygame.transform.scale(start_img,(1000,600))#Redimensionar imagen
 start_img.set_colorkey(BLACK) #Quita el contorno negro
 
 #Game over
-game_over_img =  pygame.image.load(".\PyGame\img\zgameover.jpg").convert()
+game_over_img =  pygame.image.load(".\img\zgameover.jpg").convert()
 game_over_img = pygame.transform.scale(game_over_img,(1000,600))#Redimensionar imagen
   
 #Win
-win_img =  pygame.image.load(".\PyGame\img\zwin.jpg").convert()
+win_img =  pygame.image.load(".\img\zwin.jpg").convert()
 win_img = pygame.transform.scale(win_img,(1000,600))#Redimensionar imagen
 
 
 
 #Importamos sonidos ----------------------------------------------------------------------------------------------------------------------------------------
-laser_sound = pygame.mixer.Sound(".\PyGame\sounds\zlaser.wav")
-misil_sound = pygame.mixer.Sound(".\PyGame\sounds\zmisil.wav")
-win_sound = pygame.mixer.Sound(".\PyGame\sounds\zwin.wav")
-lost_sound = pygame.mixer.Sound(".\PyGame\sounds\zlost.wav")
-impact_sound = pygame.mixer.Sound(".\PyGame\sounds\zimpacto.wav")
+laser_sound = pygame.mixer.Sound(".\sounds\zlaser.wav")
+misil_sound = pygame.mixer.Sound(".\sounds\zmisil.wav")
+win_sound = pygame.mixer.Sound(".\sounds\zwin.wav")
+lost_sound = pygame.mixer.Sound(".\sounds\zlost.wav")
+impact_sound = pygame.mixer.Sound(".\proyecto_pygame_stargalaxy1.0\sounds\zimpacto.wav")
 
 
 
